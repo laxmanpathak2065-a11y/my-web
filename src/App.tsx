@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
+import { AboutSection } from './components/AboutSection';
 import { ProjectShowcase } from './components/ProjectShowcase';
 import { CaseStudyModal } from './components/CaseStudyModal';
 import { ExperienceTimeline } from './components/ExperienceTimeline';
@@ -54,7 +55,10 @@ export default function App() {
         {/* Split Screen Hero with 4-column KPI strip below */}
         <Hero onOpenResume={() => setResumeOpen(true)} />
 
-        {/* Selected Works Bento Grid with interactive filter & modal triggers */}
+        {/* Detailed Introduction & Story of Laxman Pathak */}
+        <AboutSection />
+
+        {/* Selected Works Bento Grid with interactive search, filter & modal triggers */}
         <ProjectShowcase onSelectProject={(project) => setSelectedProject(project)} />
 
         {/* Experience Timeline */}

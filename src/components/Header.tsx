@@ -16,7 +16,7 @@ export const Header: React.FC<HeaderProps> = ({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: 'About', href: '#about' },
+    { label: 'About', href: '#introduction' },
     { label: 'Selected Works', href: '#works' },
     { label: 'Experience', href: '#experience' },
     { label: 'Arsenal', href: '#skills' },
